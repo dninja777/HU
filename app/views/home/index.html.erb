@@ -3,53 +3,25 @@
   <p>The Q&A site is dedicated to questions about the history of the universe</p>
   
 </div>
-
+<div class="container">
 <% @questions.each do |q| %>
 <div class="media">
-  <div class="media-left media-middle">
+  <div class="media-left ">
     <a href="#">
-      <img class="media-object" src="..." alt="...">
+      <img class="media-object" src="" alt="...">
     </a>
   </div>
   <div class="media-body">
     <h4 class="media-heading"><%= q.email %> asked:</h4>
-    <p><%= q.body %></p>	
+    <%= q.body %>	
       <div>
           <a href="/questions/12" class="btn btn-success btn-xs">View Answer</a>
       </div>
   </div>
 
-  <div class="media">
-  <div class="media-left media-middle">
-    <a href="#">
-      <img class="media-object" src="..." alt="...">
-    </a>
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">User@email.com asked:</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, reiciendis ex, possimus impedit placeat voluptates aperiam eaque rem consequuntur obcaecati incidunt maiores quibusdam nihil vero rerum officiis ut facilis odio.</p>	
- 
-     <div>
-          <a href="/questions/12" class="btn btn-success btn-xs">View Answer</a>
-      </div>
-  </div>
-  </div>
 
-  <div class="media">
-  <div class="media-left media-middle">
-    <a href="#">
-      <img class="media-object" src="..." alt="...">
-    </a>
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">User@email.com asked:</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, reiciendis ex, possimus impedit placeat voluptates aperiam eaque rem consequuntur obcaecati incidunt maiores quibusdam nihil vero rerum officiis ut facilis odio.</p>	
-      
-      <div>
-          <a href="/questions/12" class="btn btn-success btn-xs">View Answer</a>
-      </div>
-  </div>
-  
-  </div>
 
+
+<% end %>
+</div>
 </div>
